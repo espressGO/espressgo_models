@@ -3,13 +3,14 @@ package models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "users")
-public class Users {
+@Document(collection = "user")
+public class User {
     @Id
     public String id;
     public String email;
-    public String username;
+    public String displayName;
 
+    //TODO Add more things to a user. Fav drink, urls, eh
     String getId() {
         return id;
     }
@@ -26,15 +27,13 @@ public class Users {
         this.email = email;
     }
 
-    String getUsername() {
-        return username;
+    public String getDisplayName() {
+        return displayName;
     }
 
-    void setUsername(String username) {
-        this.username = username;
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
     }
-
-    // private Double salary;
 
 
 }
