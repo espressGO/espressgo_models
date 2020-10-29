@@ -1,21 +1,21 @@
 package models;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "user")
 public class User {
     @Id
-    public String id;
+    public ObjectId id;
     public String email;
     public String displayName;
 
-    //TODO Add more things to a user. Fav drink, urls, eh
-    String getId() {
+    public ObjectId getId() {
         return id;
     }
 
-    void setId(String id) {
+    public void setId(ObjectId id) {
         this.id = id;
     }
 
