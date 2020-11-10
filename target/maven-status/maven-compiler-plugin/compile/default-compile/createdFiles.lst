@@ -1,2 +1,4 @@
 models/User.class
 models/Message.class
+models/Shop.class
+models/Drink.class
