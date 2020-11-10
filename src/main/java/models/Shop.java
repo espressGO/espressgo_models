@@ -10,8 +10,7 @@ public class Shop {
     @Id
     public ObjectId id;
     public ArrayList<Drink> drinks;
-    public ArrayList<Message> reviews;
-    public String shop_name;
+    public String shopname;
     public String neighborhood;
     public String website;
 
@@ -23,12 +22,12 @@ public class Shop {
         this.id = id;
     }
 
-    public String getShop_name() {
-        return shop_name;
+    public String getShopname() {
+        return shopname;
     }
 
-    public void setShop_name(String shop_name) {
-        this.shop_name = shop_name;
+    public void setShop_name(String shopname) {
+        this.shopname = shopname;
     }
 
     public String getNeighborhood() {
@@ -54,18 +53,4 @@ public class Shop {
     public void setDrinks(ArrayList<Drink> drinks) {
         this.drinks = drinks;
     }
-
-    public ArrayList<Message> getReviews() {
-        return reviews;
-    }
-
-    public void setReviews(ArrayList<Message> reviews) {
-        this.reviews = reviews;
-    }
-
-    public void addReview(Message review)
-    {
-        this.reviews.add(review);
-    }
 }
-
