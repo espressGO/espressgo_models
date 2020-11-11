@@ -12,7 +12,7 @@ public class User {
     public ObjectId id;
     public String email;
     public String displayName;
-    public ArrayList<Message> messages;
+    public ArrayList<Message> messages = new ArrayList<>();
     public ObjectId getId() {
         return id;
     }
