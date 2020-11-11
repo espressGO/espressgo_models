@@ -10,7 +10,7 @@ public class Shop {
     @Id
     public ObjectId id;
     public ArrayList<Drink> drinks;
-    public String shopname;
+    public String name;
     public String neighborhood;
     public String website;
 
@@ -22,11 +22,11 @@ public class Shop {
         this.id = id;
     }
 
-    public String getShopname() {
+    public String getName() {
         return shopname;
     }
 
-    public void setShop_name(String shopname) {
+    public void setName(String Name) {
         this.shopname = shopname;
     }
 
