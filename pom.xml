@@ -28,7 +28,7 @@
 
     <groupId>com.espressgo.models</groupId>
     <artifactId>espressgo_models</artifactId>
-    <version>1.43</version>
+    <version>1.46</version>
     <dependencies>
     <dependency>
         <groupId>org.springframework.boot</groupId>
