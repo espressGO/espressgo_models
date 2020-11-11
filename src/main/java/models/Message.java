@@ -19,7 +19,7 @@ public class Message {
         return drinkname;
     }
 
-    public void setUserEmail(String drinkname) {
+    public void setDrinkname(String drinkname) {
         this.drinkname = drinkname;
     }
     public String getShopname() {
